@@ -1,0 +1,3 @@
+# MyExtGenApp application
+
+moderndesktopminimal template
