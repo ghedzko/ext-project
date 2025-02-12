@@ -5,5 +5,10 @@ Ext.define("MyExtGenApp.view.main.MainViewModel", {
     clickTime: Date.now(),
     counter: 0,
   },
+  formulas: {
+    isCounterZero: function (get) {
+      return get("counter") === 0;
+    },
+  },
   stores: {},
 });

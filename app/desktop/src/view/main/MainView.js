@@ -34,5 +34,18 @@ Ext.define("MyExtGenApp.view.main.MainView", {
       text: "Click here to sum !",
       handler: "onSumButtonClick",
     },
+    {
+      xtype: "button",
+      text: "Reset",
+      handler: "onResetButtonClick",
+      bind: {
+        disabled: "{isCounterZero}",
+      },
+    },
+    {
+      xtype: "button",
+      text: "Click here to subtract!",
+      handler: "onSubtractButtonClick",
+    },
   ],
 });

@@ -5,9 +5,17 @@ Ext.define("MyExtGenApp.view.main.MainViewController", {
   onButtonClick: function (button) {
     this.lookupReference("df").setValue(Date.now());
   },
-  onSumButtonClick: function (button) {
-    this.lookupReference("counter").setValue(
-      this.lookupReference("counter").getValue() + 1
-    );
+  onSumButtonClick: function () {
+    const vm = this.getViewModel();
+    vm.set("counter", vm.get("counter") + 1);
+  },
+
+  onSubtractButtonClick: function () {
+    const vm = this.getViewModel();
+    vm.set("counter", vm.get("counter") - 1);
+  },
+
+  onResetButtonClick: function () {
+    this.getViewModel().set("counter", 0);
   },
 });
