@@ -18,8 +18,8 @@ Ext.define("MyExtGenApp.view.main.components.CounterComponent", {
     },
     {
       xtype: "button",
-      text: "Click here to sum!",
-      handler: "onSumButtonClick",
+      text: "- 1",
+      handler: "onSubtractButtonClick",
     },
     {
       xtype: "button",
@@ -31,8 +31,8 @@ Ext.define("MyExtGenApp.view.main.components.CounterComponent", {
     },
     {
       xtype: "button",
-      text: "Click here to subtract!",
-      handler: "onSubtractButtonClick",
+      text: "+ 1",
+      handler: "onSumButtonClick",
     },
   ],
 });
